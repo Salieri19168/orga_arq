@@ -16,7 +16,7 @@ def busca(primeiro, ultimo, procurado):
   print(cep)
 
   if(cep == procurado):
-    print("encontrado")
+    print("Achou")
     print(linha)
  
   elif(procurado>cep):
