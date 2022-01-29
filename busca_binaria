@@ -2,8 +2,8 @@ from io import SEEK_SET
 import os
 
 procurado= int(input("insera o cep: "))
-caminho = "cep_ordenado.dat"
-size_file= os.stat(caminho).st_size
+dados = "cep_ordenado.dat"
+size_file= os.stat(dados).st_size
 arquivo = open("cep_ordenado.dat", 'r')
 tamanho_linhas=300
 numero_linhas=size_file//tamanho_linhas
@@ -30,6 +30,5 @@ def busca(primeiro, ultimo, procurado):
   else:
    
     print("não encontrado")
-  
   
 busca(1, numero_linhas, procurado)
